@@ -14,6 +14,15 @@ class TypeOrganizationTranslateInline(admin.StackedInline):
     model = TypeOrganizationTranslate
     extra = 2
 
+class InformationTypeTranslateInline(admin.StackedInline):
+    model = InformationTypeTranslate
+    extra = 2
+
+class InformationTypeAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    
+    inlines = [InformationTypeTranslateInline]
+
 class TypeOrganizationAdmin(admin.ModelAdmin):
     search_fields = ['name']
     
@@ -29,8 +38,19 @@ class ServiceAdmin(admin.ModelAdmin):
     
     inlines = [ServiceTranslateInline]
 
+class InformationTranslateInline(admin.StackedInline):
+    model = InformationTranslate
+    extra = 2
+
+class InformationAdmin(admin.ModelAdmin):
+    search_fields = ['name']
+    
+    inlines = [InformationTranslateInline]
+
 admin.site.register(Language)
 admin.site.register(Category,CategoryAdmin)
 admin.site.register(Service,ServiceAdmin)
 admin.site.register(TypeOrganization,TypeOrganizationAdmin)
-admin.site.register(Information)
+admin.site.register(Information,InformationAdmin)
+admin.site.register(InformationType,InformationTypeAdmin)
+

@@ -93,6 +93,11 @@ class InformationType(models.Model):
     def __unicode__(self):
         return self.name
 
+class InformationTypeTranslate(models.Model):
+    language = models.ForeignKey(Language,null=False,blank=False)
+    informationtype = models.ForeignKey(InformationType,null=False,blank=False)
+    name = models.CharField('Name',blank=False, max_length=50)
+    
 
 
 class Information(models.Model):
@@ -111,7 +116,7 @@ class InformationTranslate(models.Model):
     language = models.ForeignKey(Language,null=False,blank=False)
     information = models.ForeignKey(Information,null=False,blank=False)
     name = models.CharField('Name',blank=False, max_length=50)
-    description = models.CharField('Description', max_length=500)
+    description = models.TextField('Description',blank=True)
 
 
     
