@@ -1,0 +1,6 @@
+Django==1.6.5
+South==0.8.4
+distribute==0.7.3
+-e git+https://github.com/django-debug-toolbar/django-debug-toolbar.git@f878ec075d94344e2b16c8d21832b422990f65fd#egg=django_debug_toolbar-dev
+mysql-python==1.2.3
+sqlparse==0.1.11

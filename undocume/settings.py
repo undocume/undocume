@@ -59,6 +59,8 @@ WSGI_APPLICATION = 'undocume.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
+from . import local
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
@@ -79,7 +81,6 @@ DATABASES = {
     #     ...
     # },
 }
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
