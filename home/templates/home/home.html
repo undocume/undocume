@@ -1,0 +1,11 @@
+{% load static from staticfiles %}
+
+
+{% if categories %}
+ {%for c in categories%}
+    <div>
+        {{c.name }}
+
+    </div>
+ {% endfor %}
+{% endif %}
