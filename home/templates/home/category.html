@@ -1,0 +1,21 @@
+{% extends "_layouts/base.html" %}
+{% load static from staticfiles %}
+
+{% block content %}
+<div class="row text-center">
+{% if services %}
+ {%for s in services%}
+            <div class="col-md-4">
+                <a href="/category/{{s.id}}">
+                    <div class="servicios">
+                        <h2>{{s.name }}</h2>
+                        <span class="{{s.image}}"></span>
+                    </div>
+                </a>
+            </div>
+       
+ {% endfor %}
+ {%else%}
+ <h2>No hay Servicios en esta Categoria</h2>
+{% endif %}
+{% endblock %}

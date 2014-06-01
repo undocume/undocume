@@ -1,0 +1,121 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon/icomoon.eot?25m944');
+	src:url('../fonts/icomoon/icomoon.eot?#iefix25m944') format('embedded-opentype'),
+		url('../fonts/icomoon/icomoon.woff?25m944') format('woff'),
+		url('../fonts/icomoon/icomoon.ttf?25m944') format('truetype'),
+		url('../fonts/icomoon/icomoon.svg?25m944#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-social-services:before {
+	content: "\e600";
+}
+.icon-legal:before {
+	content: "\e601";
+}
+.icon-healthcare:before {
+	content: "\e602";
+}
+.icon-education:before {
+	content: "\e603";
+}
+.icon-culture:before {
+	content: "\e604";
+}
+.icon-civic:before {
+	content: "\e605";
+}
+.icon-business:before {
+	content: "\e606";
+}
+.icon-newspaper:before {
+	content: "\e607";
+}
+.icon-pencil:before {
+	content: "\e608";
+}
+.icon-music:before {
+	content: "\e609";
+}
+.icon-file:before {
+	content: "\e60a";
+}
+.icon-tags:before {
+	content: "\e60b";
+}
+.icon-barcode:before {
+	content: "\e60c";
+}
+.icon-location:before {
+	content: "\e60d";
+}
+.icon-clock:before {
+	content: "\e60e";
+}
+.icon-earth:before {
+	content: "\e60f";
+}
+.icon-star:before {
+	content: "\e610";
+}
+.icon-heart:before {
+	content: "\e611";
+}
+.icon-thumbs-up:before {
+	content: "\e612";
+}
+.icon-thumbs-up2:before {
+	content: "\e613";
+}
+.icon-smiley:before {
+	content: "\e614";
+}
+.icon-sad:before {
+	content: "\e615";
+}
+.icon-arrow-up:before {
+	content: "\e616";
+}
+.icon-arrow-right:before {
+	content: "\e617";
+}
+.icon-arrow-down:before {
+	content: "\e618";
+}
+.icon-arrow-left:before {
+	content: "\e619";
+}
+.icon-share:before {
+	content: "\e61a";
+}
+.icon-mail:before {
+	content: "\e61b";
+}
+.icon-facebook:before {
+	content: "\e61c";
+}
+.icon-facebook2:before {
+	content: "\e61d";
+}
+.icon-twitter:before {
+	content: "\e61e";
+}
+.icon-twitter2:before {
+	content: "\e61f";
+}
