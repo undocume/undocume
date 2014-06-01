@@ -1,11 +1,58 @@
+{% extends "_layouts/base.html" %}
 {% load static from staticfiles %}
 
-
+{% block content %}
+<div class="row text-center">
 {% if categories %}
  {%for c in categories%}
-    <div>
-        {{c.name }}
-
-    </div>
+            <div class="col-md-4">
+                <a href="/category/{{c.id}}">
+                    <div class="servicios">
+                        <h2>{{c.name }}</h2>
+                        <span class="{{c.image}}"></span>
+                    </div>
+                </a>
+            </div>
+       
  {% endfor %}
 {% endif %}
+</div>
+<!-- <div class="row">
+            <h1>POPULAR</h1>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Post</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a class="pull-right" href="#">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Post</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a class="pull-right" href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Post</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a class="pull-right" href="#" role="button">Read more...</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Post</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a class="pull-right" href="#">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Post</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a class="pull-right" href="#" role="button">Read more...</a>
+                </div>
+                <div class="col-md-4">
+                    <h2>Post</h2>
+                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                    <a class="pull-right" href="#" role="button">Read more...</a>
+                </div>
+            </div>
+        </div> -->
+
+{% endblock %}

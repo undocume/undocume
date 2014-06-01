@@ -1,0 +1,74 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.navbar-default {
+    background-image: none;
+    background-color: transparent;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    -ms-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+#idioma.navbar-nav > li > a {
+    color: white;
+}
+.mar-bot-25 {
+    margin-bottom: 25px;
+}
+.rounded {
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+}
+
+footer {
+    color: white;
+}
+
+/*CUSTOME CLASES*/
+
+.bg-black {
+    background-color: black;
+}
+
+.servicios {
+    background-color: #C1C1C1;
+    color: #484848;
+
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+.navbar-header {
+    display: inline-block;   
+}
+
+.servicios span {
+    font-size: 18em;
+}
+.navbar-fixed-bottom {
+    margin-top: 25px;
+}
+/*FIN CUSTOME CLASES*/
+
+
+
+
+
+
+
+
+
+
+
+
