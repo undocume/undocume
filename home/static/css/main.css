@@ -6,7 +6,7 @@
 
 .navbar-default {
     background-image: none;
-    background-color: transparent;
+    background-color: #2D292A;
     -moz-box-shadow: none;
     -webkit-box-shadow: none;
     -o-box-shadow: none;
@@ -20,6 +20,9 @@
 }
 .mar-bot-25 {
     margin-bottom: 25px;
+}
+.mar-top-20 {
+    margin-top: 20px;
 }
 .rounded {
     -ms-border-radius: 10px;
@@ -40,14 +43,14 @@ footer {
 }
 
 .servicios {
-    background-color: #C1C1C1;
+    background-color: #E4E4E4;
     color: #484848;
 
-    -ms-border-radius: 15px;
+    /*-ms-border-radius: 15px;
     -o-border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
-    border-radius: 15px;
+    border-radius: 15px;*/
 }
 .navbar-header {
     display: inline-block;   
@@ -56,19 +59,33 @@ footer {
 .servicios span {
     font-size: 18em;
 }
+.servicios h2 {
+    font-size: 2em;
+}
+
+.servicios.alt {
+    background-color: #CCCCCC;
+}
+
+.servicios a {
+    text-decoration: none;
+    color: #494949;
+}
+.servicios a:hover {
+    text-decoration: none;
+}
+.servicios:hover {
+    background-color: #D95701;
+    color: white;
+}
+.bg-orange {
+    background-color: #C25711;
+}
 .navbar-fixed-bottom {
     margin-top: 25px;
 }
+
+footer a {
+    color: white;
+}
 /*FIN CUSTOME CLASES*/
-
-
-
-
-
-
-
-
-
-
-
-

@@ -53,3 +53,4 @@ coverage.xml
 docs/_build/
 */local.py
 undocume/local.py
+*/settings/local.py

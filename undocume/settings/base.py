@@ -18,10 +18,10 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../")
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '6g1kuid7p=pz7uw(o!9en#gz#(i#c!33=@^+h(*+21ud505^ia'
+GRAPPELLI_ADMIN_TITLE="Undocume"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+
 
 TEMPLATE_DEBUG = True
 
@@ -40,7 +40,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'south',
     'home',
-    'debug_toolbar',
+    'storages',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -60,28 +60,7 @@ WSGI_APPLICATION = 'undocume.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-from . import local
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'undocume',
-        'USER': 'root',
-        'PASSWORD': '',
-        'HOST': '',
-        'PORT': '',
-        'OPTIONS': {
-            
-            'charset' : 'utf8',
-            'use_unicode' : True,
-        },
-        'TEST_CHARSET': 'utf8',
-        'TEST_COLLATION': 'utf8_general_ci',
-    },
-    # 'slave': {
-    #     ...
-    # },
-}
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
@@ -110,5 +89,4 @@ TEMPLATE_DIRS = (
     # Don't forget to use absolute paths, not relative paths.
     os.path.join(PROJECT_ROOT, 'templates'),
 )
-
 

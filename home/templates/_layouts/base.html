@@ -30,11 +30,10 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-
-    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-        <div class="container bg-black rounded">
+   <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
             <div class="navbar-header text-center">
-                <a class="navbar-brand" href="#">UNDOCU.ME</a>
+                <a class="navbar-brand" href="/"><img class="img-responsive" style="width: 200px;"src="{% static "img/logo-298x45.png" %}"/></a>
             </div>
             <ul class="nav navbar-nav pull-right" id="idioma">
                 <li class="dropdown">
@@ -48,19 +47,26 @@
         </div>
     </div>
 
-    <div class="container mar-bot-25">
+    <div class="container mar-bot-25 mar-top-20">
         {% block content %}{% endblock %}
         
         
-        <footer class="bg-black rounded text-center navbar-fixed-bottom">
-            <p>&copy; Company 2014</p>
+       <footer class="bg-orange navbar-fixed-bottom">
+            <div class="container">
+               <!--  <h4>
+                    <a href="#">Be a resource</a>
+                </h4>
+                <p><a href="">Click Here</a> to add a services or business. </p> -->
+            </div>
+
         </footer>
+
     </div> <!-- /container -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-    <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script>window.jQuery || document.write('<script src="{% static "js/vendor/jquery-1.11.0.min.js" "%}"><\/script>')</script>
+    <script src="{% static "js/vendor/bootstrap.min.js" %}"></script>
+    <script src="{% static "js/plugins.js" %}"></script>
+    <script src="{% static "js/main.js" %}"></script>
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
     <script>
         (function (b, o, i, l, e, r) {
