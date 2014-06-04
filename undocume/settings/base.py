@@ -18,7 +18,7 @@ PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__) + "../../")
 # See https://docs.djangoproject.com/en/1.6/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-GRAPPELLI_ADMIN_TITLE="Undocume"
+
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
@@ -31,7 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = (
-    'grappelli',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
